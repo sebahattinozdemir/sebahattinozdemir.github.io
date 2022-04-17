@@ -2,7 +2,7 @@
   "main": {
     "name": "Sebahattin Ozdemir",
     "occupation": "Frontend Developer",
-    "description": "Currently I'm working for Turkpages.com ",
+    "description": "Currently I'm working for Turkpages.com, You can contact me from LinkedIn ",
     "image": "sebo.png",
     "bio": "A passionate Software Engineer with 3+ years of experience in Software Industry. Skilled in designing, building & maintaining highly scalable and available software applications.Love to learn new technologies everyday and apply them through building new projects.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
@@ -164,7 +164,7 @@
         "title": "Chineese Society",
         "category": "React,Firebase",
         "image": "frontendbg.png",
-        "url": "www.cvcshkd.com/"
+        "url": "https://www.cvcshkd.com/"
       },
       {
         "title": "Samsun Saglam Temizlik",
@@ -173,13 +173,13 @@
         "url": "https://www.samsunsaglamtemizlik.com/"
       },
       {
-        "title": "Herbalife E-Commerce Example",
+        "title": "Herbalife E-Commerce",
         "category": "ReactJS,Firebase",
         "image": "frontendbg.png",
         "url": "https://silly-joliot-dfa50d.netlify.app/magaza"
       },
       {
-        "title": "Law Website Example(Nar Hukuk Danismanlik)",
+        "title": "Nar Hukuk Danismanlik",
         "category": "ReactJS,Firebase",
         "image": "frontendbg.png",
         "url": "https://fanciful-dragon-6a6bd3.netlify.app/"

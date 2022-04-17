@@ -2,9 +2,9 @@
   "main": {
     "name": "Sebahattin Ozdemir",
     "occupation": "Frontend Developer",
-    "description": "A passionate Software Engineer with 3+ years of experience in Software Industry. Skilled in designing, building & maintaining highly scalable and available software applications.Love to learn new technologies everyday and apply them through building new projects.",
+    "description": "Currently I'm working for Turkpages.com ",
     "image": "sebo.png",
-    "bio": "My name is Sebahattin, I'm a Frontend Developer. Currently I'm working at Turkpages.com ",
+    "bio": "A passionate Software Engineer with 3+ years of experience in Software Industry. Skilled in designing, building & maintaining highly scalable and available software applications.Love to learn new technologies everyday and apply them through building new projects.",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "sebahattinozdmr@gmail.com",
     "phone": "+90 544 667 45 26",
@@ -57,28 +57,28 @@
     ],
     "work": [
       {
+        "company": "Pulse Protocol",
+        "title": "Freelance Frontend Developer",
+        "years": "Nov 2021 - March 2022",
+        "description": "Medical Tourism Project, REACT, NEXTJS, TYPESCRIPT, MOBX, REACT-QUERY, HTML, TAILWINDCSS, SCSS,"
+      },
+      {
+        "company": "Ekip.co",
+        "title": "Freelance Frontend Developer",
+        "years": "July 2021 - February 2022",
+        "description": "Casino website similar to(https://bc.game/), Angular12, TYPESCRIPT, BOOTSTRAP, HTML, SCSS,"
+      },
+      {
         "company": "Turkpages",
         "title": "Frontend Developer",
         "years": "July 2019 - Present",
-        "description": "E-Commerce Project, ANGULAR2+,TYPESCRIPT,HTML,CSS3,BOOTSTRAP,SCSS,PRIMENG,FLEXBOX"
-      },
-      {
-        "company": "Invemo(Pulse Protocol)",
-        "title": "Freelance Frontend Developer",
-        "years": "Nov 2021 - March 2022",
-        "description": "Medical Tourism Project, REACT,NEXTJS,TYPESCRIPT,MOBX,REACT-QUERY,HTML,TAILWINDCSS,SCSS,"
-      },
-      {
-        "company": "Angular Turkiye(Swapcasino)",
-        "title": "Freelance Frontend Developer",
-        "years": "July 2021 - February 2022",
-        "description": "Casino website similar to(https://bc.game/), Angular12,TYPESCRIPT,BOOTSTRAP,HTML,SCSS,"
+        "description": "E-Commerce Project, ANGULAR2+, TYPESCRIPT, HTML, CSS3, BOOTSTRAP, SCSS, PRIMENG, FLEXBOX"
       },
       {
         "company": "Ekinoks Software",
         "title": "Software Engineer",
         "years": "Nov 2021 - March 2022",
-        "description": "Aselsan Project, used techs :JAVA,SWING,OSGI"
+        "description": "Aselsan Project, JAVA, SWING, OSGI"
       }
     ],
     "skills": [

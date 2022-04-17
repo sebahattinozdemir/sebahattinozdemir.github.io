@@ -2,7 +2,7 @@
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sebahattinozdemir.github.io/",
+  "homepage": "https://sebahattinozdemir.github.io/",
   "dependencies": {
     "jquery": "^3.5.1",
     "react": "^16.13.1",

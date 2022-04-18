@@ -144,9 +144,9 @@
     "projects": [
       {
         "title": "Airbnb Clone",
-        "category": "React,Next,Talwind",
+        "category": "React,Next,Tailwind",
         "image": "frontendbg.png",
-        "url": "https://heuristic-goldberg-0393c7.netlify.app/"
+        "url": "https://aquamarine-scone-4eac0e.netlify.app/"
       },
       {
         "title": "Armut Clone",
@@ -183,6 +183,18 @@
         "category": "ReactJS,Firebase",
         "image": "frontendbg.png",
         "url": "https://fanciful-dragon-6a6bd3.netlify.app/"
+      },
+      {
+        "title": "Restaurant Website Example",
+        "category": "Html,Css,Javascript",
+        "image": "frontendbg.png",
+        "url": "https://inquisitive-medovik-ff4085.netlify.app"
+      },
+      {
+        "title": "Responsive Website Example",
+        "category": "Html,Css,Javascript",
+        "image": "frontendbg.png",
+        "url": "https://dapper-churros-c8322d.netlify.app"
       }
     ]
   },

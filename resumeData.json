@@ -143,6 +143,12 @@
   "portfolio": {
     "projects": [
       {
+        "title": "Medium Fullstack Clone",
+        "category": "React,Next,Tailwind",
+        "image": "frontendbg.png",
+        "url": "medium-clone-sanity.netlify.app/"
+      },
+      {
         "title": "Airbnb Clone",
         "category": "React,Next,Tailwind",
         "image": "frontendbg.png",

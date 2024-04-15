@@ -65,20 +65,42 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-3/4 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-12"
         >
-          <span>Dear Lama Dev,</span>
+          <span>Dear Sebahattin,</span>
           <textarea
-            rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            rows={10}
+            style={{
+              width: '100%',
+              height: '150px',
+              padding: '12px 20px',
+              boxSizing: 'border-box',
+              border: '2px solid #ccc',
+              borderRadius: '4px',
+              backgroundColor: '#f8f8f8',
+              fontSize: '16px',
+            }}
+            className="bg-transparent  outline-none"
+
             name="user_message"
           />
+
           <span>My mail address is:</span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            style={{
+              width: '100%',
+              padding: '6px 10px',
+              boxSizing: 'border-box',
+              border: '2px solid #ccc',
+              borderRadius: '4px',
+              backgroundColor: '#f8f8f8',
+              fontSize: '16px',
+            }}
+            className="bg-transparent  outline-none"
           />
+       
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send

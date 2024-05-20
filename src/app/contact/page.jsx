@@ -4,16 +4,13 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactPage = () => {
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  const [status, setStatus] = useState({ success: false, error: false });
   const text = "Say Hello";
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setError(false);
-    setSuccess(false);
+    setStatus({ success: false, error: false });
 
     emailjs
       .sendForm(
@@ -24,25 +21,25 @@ const ContactPage = () => {
       )
       .then(
         () => {
-          setSuccess(true);
+          setStatus({ success: true, error: false });
           form.current.reset();
         },
         () => {
-          setError(true);
+          setStatus({ success: false, error: true });
         }
       );
   };
 
   return (
     <motion.div
-      className="h-full"
+      className="min-h-screen flex flex-col justify-center items-center"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="w-full max-w-5xl flex flex-col lg:flex-row p-4 sm:p-8 md:p-12 lg:p-20 xl:p-24 bg-white rounded-lg shadow-md">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="flex-1 flex items-center justify-center text-5xl lg:text-6xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -61,57 +58,38 @@ const ContactPage = () => {
             😊
           </div>
         </div>
+
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-3/4 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-12"
+          className="flex-1 bg-gray-100 rounded-xl text-lg flex flex-col gap-6 p-6 lg:p-12"
         >
-          <span>Dear Sebahattin,</span>
+          <span className="font-semibold">Dear Sebahattin,</span>
           <textarea
-            rows={10}
-            style={{
-              width: '100%',
-              height: '150px',
-              padding: '12px 20px',
-              boxSizing: 'border-box',
-              border: '2px solid #ccc',
-              borderRadius: '4px',
-              backgroundColor: '#f8f8f8',
-              fontSize: '16px',
-            }}
-            className="bg-transparent  outline-none"
-
             name="user_message"
+            rows={6}
+            className="w-full p-3 border-2 border-gray-300 rounded-lg bg-white resize-none outline-none"
+            placeholder="Write your message here..."
           />
-
-          <span>My mail address is:</span>
+          <span className="font-semibold">My mail address is:</span>
           <input
             name="user_email"
-            type="text"
-            style={{
-              width: '100%',
-              padding: '6px 10px',
-              boxSizing: 'border-box',
-              border: '2px solid #ccc',
-              borderRadius: '4px',
-              backgroundColor: '#f8f8f8',
-              fontSize: '16px',
-            }}
-            className="bg-transparent  outline-none"
+            type="email"
+            className="w-full p-3 border-2 border-gray-300 rounded-lg bg-white outline-none"
+            placeholder="Your email address"
           />
-       
-          <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+          <span className="font-semibold">Regards</span>
+          <button className="w-full p-4 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition-colors duration-300">
             Send
           </button>
-          {success && (
-            <span className="text-green-600 font-semibold">
+          {status.success && (
+            <span className="text-green-600 font-semibold mt-4">
               Your message has been sent successfully!
             </span>
           )}
-          {error && (
-            <span className="text-red-600 font-semibold">
+          {status.error && (
+            <span className="text-red-600 font-semibold mt-4">
               Something went wrong!
             </span>
           )}

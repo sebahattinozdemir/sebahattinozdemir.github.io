@@ -135,7 +135,7 @@ const Navbar = () => {
             className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
-                <Link style={{border:'2px solid red', height:'80px' }}  key={link.title} className="w-full pl-10 pt-5"  href={link.url}>{link.title}</Link>
+                <Link style={{height:'80px' }}  key={link.title} className="w-full pl-10 pt-5"  href={link.url}>{link.title}</Link>
             ))}
           </motion.div>
         )}

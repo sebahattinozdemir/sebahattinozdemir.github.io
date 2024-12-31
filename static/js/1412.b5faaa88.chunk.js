@@ -1,0 +1,3 @@
+/*! For license information please see 1412.b5faaa88.chunk.js.LICENSE.txt */
+"use strict";(self.webpackChunkreact_portfolio=self.webpackChunkreact_portfolio||[]).push([[1412,2721,5102],{1412:(o,e,d)=>{d.r(e),d.d(e,{g:()=>n});var i=d(5102),n=function(){if(void 0!==i.w)return i.w.Capacitor}},5102:(o,e,d)=>{d.r(e),d.d(e,{d:()=>n,w:()=>i});var i="undefined"!==typeof window?window:void 0,n="undefined"!==typeof document?document:void 0}}]);
+//# sourceMappingURL=1412.b5faaa88.chunk.js.map

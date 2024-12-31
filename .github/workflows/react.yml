@@ -27,21 +27,22 @@ jobs:
           node-version: "20"
           cache: 'npm'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build React App with CRACO
         run: npm run build
         env:
-          CI: false # This prevents treating warnings as errors
+          CI: false # Prevents treating warnings as errors
+          PUBLIC_URL: "https://sebahattinozdemir.github.io/react-portfolio"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build # CRA's default build output directory
+          path: build
 
   deploy:
     environment:

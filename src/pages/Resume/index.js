@@ -13,12 +13,13 @@ import ekinoks from '../../assets/companies/ekinoks.jpeg';
 import ekip from '../../assets/companies/ekip.png';
 import invemo from '../../assets/companies/invemo.jpg';
 import ge from '../../assets/companies/general.jpg';
+import moment from 'moment';
 
 const Resume = () => {
     return (
         <div className="page" id="resume">
             <Title icon={'fa fa-briefcase'}>
-                Resume - Senior Frontend Developer
+                Resume - Total Commercial Experience {moment().diff('01/01/2016', 'years', true).toFixed(2)} years
             </Title>
             <ResumeItem
                 date={'Nov 2024 - Present'}
